@@ -1,0 +1,27 @@
+<template name="layout">
+    <head>
+        <meta charset="utf-8">
+            <title>{{title}}</title>
+        <meta name="viewport" content="initial-scale=1.0; maximum-scale=2.0; user-scalable=yes">
+    </head>
+    <body>
+        <div id="page">
+            <div class="row heading hidden-sm hidden-xs">
+                <div class="col-md-push-1 col-md-4">
+                    {{> avatar}}
+                </div>
+               <!-- <div class="col-xs-push-3 col-xs-3 text-right">
+                    {{> loginButtons}}
+                </div> -->
+            </div>
+
+            {{> navigation}}
+
+            <div class="container">
+                {{> yield}}
+            </div>
+        </div>
+
+        {{> footer}}
+    </body>
+</template>

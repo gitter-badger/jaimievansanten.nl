@@ -1,0 +1,12 @@
+<template name="contact">
+{{title 'Contact Me'}}
+    <div class="well">
+        <h1>Contact Me</h1>
+
+        {{#if sendingEmail}}
+            {{> contactNotification}}
+        {{else}}
+            {{> contactForm}}
+        {{/if}}
+    </div>
+</template>

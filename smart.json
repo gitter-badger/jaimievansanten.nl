@@ -1,0 +1,11 @@
+{
+  "packages": {
+    "less-bootstrap-3": {},
+    "font-awesome-4-less": {},
+    "iron-router": {},
+    "spin": {},
+    "captcha": {},
+    "iron-router-progress": {},
+    "iron-router-active": {}
+  }
+}
