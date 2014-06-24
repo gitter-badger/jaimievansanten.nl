@@ -7,12 +7,21 @@
     <div class="row">
     {{#if hasProjects}}
         {{#each projects}}
-            <div class="project col-sm-4">
-                <img src="http://placehold.it/600x400" width="100%" height="150" alt="{{name}}" />
-                <div class="well">
-                    <h4 class="text-center">{{name}}</h4>
+            <a href="{{pathFor 'project/'}}">
+                <div class="project col-sm-4">
+                    <img src="http://placehold.it/600x400" width="100%" height="150" alt="{{name}}" />
+                    <div class="well">
+                        <ul class="techniques list-inline hidden-sm hidden-xs">
+                            {{#each techniques}}
+                                <li>
+                                    <span class="label label-default">{{name}}</span>
+                                </li>
+                            {{/each}}
+                        </ul>
+                        <h4 class="text-center">{{name}}</h4>
+                    </div>
                 </div>
-            </div>
+            </a>
         {{/each}}
     {{else}}
         <div class="well">
@@ -21,3 +30,4 @@
     {{/if}}
     </div>
 </template>
+

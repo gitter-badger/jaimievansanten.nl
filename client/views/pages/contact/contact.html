@@ -1,12 +1,15 @@
 <template name="contact">
 {{title 'Contact Me'}}
-    <div class="well">
-        <h1>Contact Me</h1>
+    <div class="row">
+        <div class="well col-md-push-2 col-md-8">
+            <h1>Contact Me</h1>
 
-        {{#if sendingEmail}}
-            {{> contactNotification}}
-        {{else}}
-            {{> contactForm}}
-        {{/if}}
+            {{#if sendingEmail}}
+                {{> contactNotification}}
+            {{else}}
+                {{> contactForm}}
+            {{/if}}
+        </div>
     </div>
+
 </template>
