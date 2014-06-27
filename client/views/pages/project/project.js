@@ -1,3 +1,6 @@
-Template.project.project = function(){
-    return Projects.findOne({ slug: this.params.slug });
+
+Template.projectDetails.project = function(){
+    var project = Projects.findOne(Router.current().params.slug);
+    console.log(project);
+    return project;
 }
