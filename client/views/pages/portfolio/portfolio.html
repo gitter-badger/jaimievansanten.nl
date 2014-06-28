@@ -7,19 +7,14 @@
     <div class="row">
     {{#if hasProjects}}
         {{#each projects}}
-            <div class="project col-sm-4" data-project-id="{{_id}}">
+        <a href="/project/{{slug}}">
+            <div class="project col-sm-3" data-project-id="{{_id}}">
                 <img src="http://placehold.it/600x400" width="100%" height="150" alt="{{name}}" />
                 <div class="well">
-                    <ul class="techniques list-inline hidden-sm hidden-xs">
-                        {{#each techniques}}
-                            <li>
-                                <span class="label label-default">{{name}}</span>
-                            </li>
-                        {{/each}}
-                    </ul>
                     <h4 class="text-center">{{name}}</h4>
                 </div>
             </div>
+        </a>
         {{/each}}
     {{else}}
         <div class="well">

@@ -1,3 +1,21 @@
 <template name="projectDetails">
-    <h1>{{name}}</h1>
+    <div class="well">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>{{name}}</h1>
+        </div>
+
+        <div class="col-md-6">
+            <ul class="techniques list-inline hidden-sm hidden-xs">
+                {{#each techniques}}
+                    <li>
+                        <span class="label label-default">{{name}}</span>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+        <p>{{description}}</p>
+    </div>
 </template>

@@ -1,5 +1,24 @@
 if (Meteor.isServer) {
 
+    // Prefill data
+    if(Projects.find().count() == 0){
+        for(var i = 1; i <= 10; i++)
+        {
+            Projects.insert({
+                name: 'Project ' + i,
+                slug:"project" + i,
+                description: "Lorem ipsum...",
+                completed: true,
+                techniques: [
+                    {name:"ASP.NET"},
+                    {name:"Entity Framework"},
+                    {name:"Bootstrap"},
+                    {name:"Angular"}
+                ]
+            });
+        }
+    }
+
     Meteor.publish("projects", function(){
       return Projects.find();
     });
