@@ -1,0 +1,126 @@
+@import "/packages/font-awesome-4-less/font-awesome.import.less";
+
+body {
+  // background: url(https://lh5.googleusercontent.com/-VFtdhhXMKyg/U6GwEpv0peI/AAAAAAAABs8/N2MZsP5qgVQ/w1217-h803-no/coding.jpg) no-repeat center center fixed;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+
+  overflow-x: hidden;
+  .container > .well > h1 { margin-bottom: 30px; }
+
+  & > .heading {
+    margin-top: 20px;
+  }
+
+  #navigation a.active {
+    color:#0C93ED;
+    text-decoration: underline;
+  }
+
+  #avatarContainer {
+    margin-bottom: 50px;
+
+    #avatar {
+        background: black;
+        width: 105px;
+        height: 105px;
+        border-radius: 100px;
+        z-index: 999;
+
+        img {
+            border-radius: 100px;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+    }
+
+    #avatarDescription {
+        background: black;
+        color: white;
+        width: 270px;
+        height: 80px;
+        padding: 10px;
+        border-radius: 0 10px 10px 0;
+        margin: -90px 0 0 65px;
+
+        p { margin-left: 40px; margin-bottom: 1px;}
+    }
+  }
+
+  #titleContainer {
+    background: white;
+
+      h1 {
+        font-size: 25px;
+        font-weight: bold;
+        color: black;
+        padding: 30px;
+        text-align: center;
+      }
+  }
+
+  .projectsWidget {
+    margin-top: 50px;
+  }
+
+}
+
+.well {
+  border: 1px solid black;
+}
+
+// body > footer {
+//   position: absolute;
+//   bottom: 0;
+//   background: black;
+//   color: white;
+//   width: 100%;
+//   height: 25px;
+//   p { margin-top:3px;}
+// }
+
+/* Sticky Footer */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 40px;
+}
+
+#socialIcons {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    height: 30px;
+
+  i {
+    text-decoration: none;
+    color: grey;
+
+    &:hover { color: black; }
+  }
+}
+
+/* End Sticky Footer */
+
+@media only screen and (min-width: 960px){
+  #navigation {
+    &, a { font-size: 30px; color: black;}
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 960px){
+  #navigation {
+    &, a { font-size: 20px; color: black;}
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+
