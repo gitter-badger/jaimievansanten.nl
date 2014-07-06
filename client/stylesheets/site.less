@@ -1,16 +1,14 @@
 @import "/packages/font-awesome-4-less/font-awesome.import.less";
 
 body {
-  // background: url(https://lh5.googleusercontent.com/-VFtdhhXMKyg/U6GwEpv0peI/AAAAAAAABs8/N2MZsP5qgVQ/w1217-h803-no/coding.jpg) no-repeat center center fixed;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
-
   overflow-x: hidden;
   .container > .well > h1 { margin-bottom: 30px; }
 
   & > .heading {
+    margin-top: 20px;
+  }
+
+  #login-buttons {
     margin-top: 20px;
   }
 
@@ -30,6 +28,7 @@ body {
         z-index: 999;
 
         img {
+
             border-radius: 100px;
             margin-left: 5px;
             margin-top: 5px;
@@ -67,10 +66,6 @@ body {
 
 }
 
-.well {
-  border: 1px solid black;
-}
-
 // body > footer {
 //   position: absolute;
 //   bottom: 0;
@@ -104,6 +99,25 @@ body {
 
     &:hover { color: black; }
   }
+}
+
+.project {
+  .label { position: absolute; top: 10px; right: 25px; font-size: 16px;}
+}
+
+.post {
+
+  .post-topics {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* End Sticky Footer */

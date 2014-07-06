@@ -5,10 +5,11 @@
       "less-bootstrap-3": {},
       "font-awesome-4-less": {},
       "iron-router": {},
-      "spin": {},
       "captcha": {},
       "iron-router-progress": {},
-      "iron-router-active": {}
+      "iron-router-active": {},
+      "handlebar-helpers": {},
+      "moment": {}
     },
     "packages": {
       "less-bootstrap-3": {
@@ -18,18 +19,13 @@
       },
       "font-awesome-4-less": {
         "git": "https://github.com/svub/fontawesome4-less.git",
-        "tag": "v4.3.9",
-        "commit": "45e5d416d85ad8216ac17066492dddb67ad4acb4"
+        "tag": "v4.4.0",
+        "commit": "250d2336a217c18eb70e9d074784a7db3ca38472"
       },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
         "tag": "v0.7.1",
         "commit": "d1ffb3f06ea4c112132b030f2eb1a70b81675ecb"
-      },
-      "spin": {
-        "git": "https://github.com/SachaG/meteor-spin.git",
-        "tag": "v0.2.2",
-        "commit": "3f655f0016228e4195acc784c45d3e3a247dc39f"
       },
       "captcha": {
         "git": "https://github.com/andi-bute/captcha-meteor.git",
@@ -38,13 +34,23 @@
       },
       "iron-router-progress": {
         "git": "https://github.com/Multiply/iron-router-progress.git",
-        "tag": "v0.4.0",
-        "commit": "02f78bdaca4c13d59f548d5a0ce83408c34b56d1"
+        "tag": "v0.4.1",
+        "commit": "496fcda9a6ec352b4733725f60c6f280250c3541"
       },
       "iron-router-active": {
         "git": "https://github.com/XpressiveCode/iron-router-active.git",
         "tag": "v0.2.0",
         "commit": "1b05aad5325c3dfdb5186b9c288aa53013d767b8"
+      },
+      "handlebar-helpers": {
+        "git": "https://github.com/raix/Meteor-handlebar-helpers.git",
+        "tag": "v0.1.1",
+        "commit": "0b407ab65e7c1ebd53d71aef0de2e2c1d21a597c"
+      },
+      "moment": {
+        "git": "https://github.com/acreeger/meteor-moment.git",
+        "tag": "v2.6.0",
+        "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

@@ -1,22 +1,48 @@
 <template name="projectDetails">
     <div class="well">
-    <div class="row">
-        <div class="col-md-6">
-            <h1>{{name}}</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h1>{{name}}</h1>
+            </div>
+
+            <div class="col-md-push-2 col-md-6">
+                <ul class="techniques list-inline hidden-sm hidden-xs">
+                    {{#each techniques}}
+                        <li>
+                            <span class="label label-{{randomColor}}">{{name}}</span>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
         </div>
 
-        <div class="col-md-push-2 col-md-6">
-            <ul class="techniques list-inline hidden-sm hidden-xs">
-                {{#each techniques}}
-                    <li>
-                        <span class="label label-default">{{name}}</span>
-                    </li>
-                {{/each}}
-            </ul>
-        </div>
-    </div>
+
+<!--         <div id="screenshot-carousel" class="carousel slide" data-ride="carousel" style="width: 50%;height: 200px;overflow:hidden;">
+              <ol class="screenshot-carousel-indicators">
+              {{#each screenshots}}
+                <li data-target="#screenshot-carousel" data-slide-to="{{position}}"></li>
+              {{/each}}
+              </ol>
+              <div class="carousel-inner">
+              {{#each screenshots}}
+                <div class="item">
+                  <img alt="{{alt}}" src="{{url}}">
+                  <div class="carousel-caption">
+                    {{description}}
+                  </div>
+                </div>
+              {{/each}}
+              </div>
+              <a class="left carousel-control" href="#screenshot-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#screenshot-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+        </div> -->
 
         <p>{{description}}</p>
+        <p>Client: {{client}}</p>
         <p>Website: <a href="{{website}}" target="_blank">{{website}}</a></p>
     </div>
 </template>

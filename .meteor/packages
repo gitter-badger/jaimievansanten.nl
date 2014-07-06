@@ -11,8 +11,9 @@ accounts-password
 accounts-base
 accounts-ui
 iron-router
-spin
 email
 captcha
 iron-router-progress
 iron-router-active
+handlebar-helpers
+moment
