@@ -8,6 +8,11 @@
     "iron-router-active": {},
     "handlebar-helpers": {},
     "moment": {},
-    "kadira": {}
+    "kadira": {},
+    "velocity-quick-start": {},
+    "jasmine-unit": {},
+    "mocha-web-velocity": {},
+    "jasmine": {},
+    "velocity-html-reporter": {}
   }
 }
