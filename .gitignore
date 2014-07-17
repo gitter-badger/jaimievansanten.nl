@@ -27,3 +27,4 @@ node_modules
 # Meteor specific files
 .meteor/local
 *.tar.gz
+start.sh

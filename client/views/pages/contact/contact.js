@@ -13,7 +13,7 @@ Template.contact.events({
             subject = $(evt.target).find('[id=subject]'),
             message = $(evt.target).find('[id=message]');
 
-        VisualCaptcha.validateCaptcha(function(){
+        // VisualCaptcha.validateCaptcha(function(){
             Session.set("sendingEmail", true);
 
             Meteor.call("sendContactEmail", email.val(), subject.val(), message.val());
@@ -22,6 +22,6 @@ Template.contact.events({
             email.val("");
             subject.val("");
             message.val("");
-        });
+        // });
     }
 });

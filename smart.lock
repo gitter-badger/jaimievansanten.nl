@@ -9,13 +9,14 @@
       "iron-router-progress": {},
       "iron-router-active": {},
       "handlebar-helpers": {},
-      "moment": {}
+      "moment": {},
+      "kadira": {}
     },
     "packages": {
       "less-bootstrap-3": {
         "git": "https://github.com/DerMambo/less-bootstrap-3.git",
-        "tag": "v0.0.1",
-        "commit": "1321ac0ebc809bc354186b96f4c28b7042e38507"
+        "tag": "v0.0.2",
+        "commit": "b5010b2ff9e9ae6b0e6e13eb0f6c81c9cb84373e"
       },
       "font-awesome-4-less": {
         "git": "https://github.com/svub/fontawesome4-less.git",
@@ -51,6 +52,11 @@
         "git": "https://github.com/acreeger/meteor-moment.git",
         "tag": "v2.6.0",
         "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
+      },
+      "kadira": {
+        "git": "https://github.com/meteorhacks/kadira.git",
+        "tag": "v2.4.8",
+        "commit": "5f4437af113537def34484c7b7a2a5e4d60847a9"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
