@@ -5,6 +5,9 @@
 
 meteor-platform
 less
+less-bootstrap-3
+font-awesome-4-less
+accounts-password
 accounts-base
 accounts-password
 accounts-ui
@@ -19,6 +22,7 @@ jeeeyul:moment-with-langs
 npm-container
 meteorhacks:kadira
 zimme:iron-router-active
+jasmine
 miguelvalverde:font-awesome-4.1.0
 mizzao:bootstrap-3
 
