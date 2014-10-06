@@ -1,30 +1,22 @@
 <template name="navigation">
-<div id="navigation" class="container text-center">
-    <span class="text-muted">{</span>
-
-    <a class="{{ isActiveRoute 'home' 'active' }}"
+<div class="container">
+    <nav id="navigation">
+        <span class="text-muted">{</span>
+        <a class="{{ isActiveRoute 'home' 'active' }}"
         href="{{pathFor 'home'}}">Home</a>
-
-    <span class="text-muted">|</span>
-
-    <a class="{{ isActiveRoute 'about' 'active' }}"
+        <span class="text-muted">|</span>
+        <a class="{{ isActiveRoute 'about' 'active' }}"
         href="{{pathFor 'about'}}">About me</a>
-
-    <span class="text-muted">|</span>
-
-    <a class="{{ isActiveRoute 'blog' 'active' }}"
+        <span class="text-muted">|</span>
+        <a class="{{ isActiveRoute 'blog' 'active' }}"
         href="{{pathFor 'blog'}}">Blog</a>
-
-    <span class="text-muted">|</span>
-
-    <a class="{{ isActiveRoute 'portfolio' 'active' }}"
+        <span class="text-muted">|</span>
+        <a class="{{ isActiveRoute 'portfolio' 'active' }}"
         href="{{pathFor 'portfolio'}}">Portfolio</a>
-
-    <span class="text-muted">|</span>
-
-    <a class="{{ isActiveRoute 'contact' 'active' }}"
+        <span class="text-muted">|</span>
+        <a class="{{ isActiveRoute 'contact' 'active' }}"
         href="{{pathFor 'contact'}}">Contact</a>
-
-    <span class="text-muted">}</span>
+        <span class="text-muted">}</span>
+    </nav>
 </div>
 </template>
