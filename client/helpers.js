@@ -1,3 +1,11 @@
+UI.registerHelper("title", function(title) {
+  if(title) {
+      document.title = title + " / Jaimie van Santen";
+  } else {
+      document.title = "Jaimie van Santen";
+  }
+});
+
 UI.registerHelper('randomColor', function(context, options) {
     colors = ['default', 'primary', 'danger', 'warning', 'info', 'success', 'info'];
 

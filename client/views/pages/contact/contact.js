@@ -1,8 +1,13 @@
 Session.setDefault("sendingEmail", false);
 
-Template.contact.sendingEmail = function(){
+Template.contact.helpers({
+  page: function () {
+    return Pages.findOne({ name: "contact" });
+  },
+  sendingEmail: function() {
     return Session.get("sendingEmail");
-}
+  }
+});
 
 Template.contact.events({
     'submit form': function(evt,tmpl){

@@ -6,5 +6,11 @@ Template.projectDetails.helpers ({
 });
 
 Template.projectDetails.rendered = function () {
-    $(".carousel .item:first-child").addClass("active");
+  // Deps.autorun(function() {
+  //   $(function() {
+  //     // $('#screenshot-carousel').carousel();
+  //     // $("#screenshot-carousel > ol > li:nth-child(1)").addClass("active");
+  //     // $("#screenshot-carousel > div > div:nth-child(1)").addClass("active");
+  //   });
+  // });
 };

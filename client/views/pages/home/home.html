@@ -1,7 +1,7 @@
 <template name="home">
-{{title 'Home'}}
+{{title page.title}}
     <div class="well">
-        <h1>Welcome!</h1>
-        <p>Welcome to my humble website, feel free to have a look around :)</p>
+        <h1>{{page.title}}</h1>
+        <p>{{page.header}}</p>
     </div>
 </template>

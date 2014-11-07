@@ -5,3 +5,7 @@ Meteor.publish("projects", function(){
 Meteor.publish("posts", function(){
   return Posts.find({ published: true });
 });
+
+Meteor.publish("pages", function() {
+  return Pages.find();
+});

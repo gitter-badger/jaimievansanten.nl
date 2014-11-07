@@ -102,4 +102,40 @@ if(Meteor.isServer) {
         });
     }
 
+    if(Pages.find().count() == 0){
+        console.log("No pages found, inserting sample data");
+
+        var pages = [
+        {
+            name: "home",
+            title: "Welcome!",
+            header: "Welcome to my humble website, feel free to have a look around :)"
+        },
+        {
+            name: "about",
+            title: "About me",
+            header: "Hi there! My name is Jaimie van Santen."
+        },
+        {
+            name: "blog",
+            title: "Codeblogs",
+            header: "Me, just babbling about something that caught my attention lately."
+        },
+        {
+            name: "portfolio",
+            title: "Portfolio",
+            header: "Projects I've had some kind of contribution to."
+        },
+        {
+            name: "contact",
+            title: "Contact me",
+            header: "Contact me about any questions or offerings."
+        }
+        ];
+
+        for(var i = 0; i < pages.length; i++) {
+            Pages.insert(pages[i]);
+        }
+    }
+
 }
